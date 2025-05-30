@@ -8,7 +8,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 image_path = os.path.join(current_dir, "wanted_person.png")
 
 # Load image and check if it loaded successfully
-orig = cv2.imread(image_path)
+orig = cv2.imread(image_path) 
 if orig is None:
     raise FileNotFoundError(f"Could not load image from {image_path}. Please check if the file exists and is readable.")
  
